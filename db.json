@@ -5,8 +5,12 @@
       "id": 1
     },
     {
-      "title": "good book",
-      "id": 2
+      "title": "The Kite Runner by Khaled Hossein",
+      "id": 3
+    },
+    {
+      "title": "The Lord of the Rings by J.R.R. Tolkien.",
+      "id": 5
     }
   ]
 }

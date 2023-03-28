@@ -1,12 +1,18 @@
 import { useState } from "react";
-import Form from "./Form.component";
-const BookCreate = ({ onCreate }) => {
-  const [title, setTitle] = useState("");
 
-  // pass data to parent
+import useBookContext from "../hooks/use-book-context";
+
+import Form from "./Form.component";
+
+const BookCreate = () => {
+  const [title, setTitle] = useState("");
+  // get createBook from context
+  const { createBook } = useBookContext();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onCreate(title);
+
+    createBook(title);
     setTitle("");
   };
 
